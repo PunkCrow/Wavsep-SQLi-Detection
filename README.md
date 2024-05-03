@@ -36,14 +36,13 @@ You will be prompted to enter a URL or type "random" to select a URL from the pr
 ## Operational Workflow
 
 - URL Input: Input a specific URL or type "random" to use a URL from the provided list (urls.txt).
-- Validation Checks:
-  - URL Format Check: Verifies the syntactical correctness of the input URL.
-  - Reachability Check: Confirms that the URL is accessible.
-  - Input Tag Detection: Scans the HTML content of the URL for input fields where payloads can be injected. If no input tags are found, the program exits.
-  - SQL Injection Testing:
-    - Basic SQLI: Tests tautological inputs in the SQL queries.
-    - Union-Based SQLI: Attempts to use the UNION SQL operator to detect visible query alterations in the response.
-    - Blind SQLI: Uses time delays and other indirect methods to infer the presence of SQL injection vulnerabilities when direct methods fail.
+    - URL Format Check: Verifies the syntactical correctness of the input URL.
+    - Reachability Check: Confirms that the URL is accessible.
+    - Input Tag Detection: Scans the HTML content of the URL for input fields where payloads can be injected. If no input tags are found, the program exits.
+- SQL Injection Testing:
+  - Basic SQLI: Tests tautological inputs in the SQL queries.
+  - Union-Based SQLI: Attempts to use the UNION SQL operator to detect visible query alterations in the response.
+  - Blind SQLI: Uses time delays and other indirect methods to infer the presence of SQL injection vulnerabilities when direct methods fail.
 
 ## Repository Structure
 
